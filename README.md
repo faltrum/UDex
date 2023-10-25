@@ -34,7 +34,7 @@ UDEX (MVP) is XDC's own decentralized perpetual exchange. It differs from other 
 * XDC/USDT 15x leverage.
 
 ## Technicals specifications
-* Pool designed with [ERC-4626](https://ethereum.org/es/developers/docs/standards/tokens/erc-4626/).
+* Perpetual Guardian with [ERC-4626](https://ethereum.org/es/developers/docs/standards/tokens/erc-4626/).
 * Contract Vault.
 * [Oracle Plugin (PLI).](https://www.goplugin.co/)
 * Manual Keeper.
