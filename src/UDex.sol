@@ -73,7 +73,7 @@ contract UDex is ERC4626, Ownable, ReentrancyGuard {
         i_xdc = IERC20(_xdc);
 
         // avoiding inflationary attack
-        _mint(address(this), DEAD_SHARES);
+        /* _mint(address(this), DEAD_SHARES); */
     }
 
     //================================================================================
