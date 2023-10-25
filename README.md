@@ -40,10 +40,18 @@ UDEX (MVP) is XDC's own decentralized perpetual exchange. It differs from other 
 * Manual Keeper.
 * [XDC-Pay Wallet Connection.](https://docs.goplugin.co/wallet/xdcpay-mainnet)
 
+<div style="text-align: center;">
+  <a href="#top">Move to the top</a>
+</div>
+
 ## Visuals
 > * Introducir video corto de demostración.
 > * Video conectando la wallet.
 > * video mostrando las webs.
+
+<div style="text-align: center;">
+  <a href="#top">Move to the top</a>
+</div>
 
 ## How the system works
 
@@ -78,6 +86,10 @@ Owner can use
 
 - `setPositionFeeBasisPoints` used to adjust the position fee between 1 and 200 basis points
 
+<div style="text-align: center;">
+  <a href="#top">Move to the top</a>
+</div>
+
 ## Oracle system
 
 Prices are provided by an on-chain oracle system:
@@ -107,6 +119,10 @@ One function created to maintain the protocol's security is called "liquidate," 
 We also maintain functions that calculate the positions to ensure they are safe for the protocol before opening and while they are open
 
 The library used to receive oracle prices, "PriceConverter," uses the interface of the ChainLink library "AggregatorV3." We receive the price of the ETH/XDC asset, allowing us to obtain the current price at any given moment.
+
+<div style="text-align: center;">
+  <a href="#top">Move to the top</a>
+</div>
 
 ## Implementation details
 
@@ -154,6 +170,10 @@ Deposit requests are created by calling the `addLiquidity` function, specifying:
 
 Deposits are added to the vault and aggregated to provide liquidity to the protocol.
 
+<div style="text-align: center;">
+  <a href="#top">Move to the top</a>
+</div>
+
 ## Withdrawals
 
 Withdrawals are initiated by calling `removeLiquidity` and specifying:
@@ -200,6 +220,10 @@ To liquidate a long or short perpetual position, order requests are created by c
 - Additionally, we use the `_applyBorrowingFee` function to apply a borrowing fee based on the position's size and the time it has been open.
 - A transfer is then made to the entity calling the `liquidate` operation, totaling 10% of the available collateral, while the remaining collateral is returned to the user from the position.
 
+<div style="text-align: center;">
+  <a href="#top">Move to the top</a>
+</div>
+
 ## Known risks and limitations
 
 - We are aware of precision issues, due to the fact that in some places we keep `XDC` with precision of 1e18, but in others (Like `totalAssets()`) we keep it as is.
@@ -223,5 +247,7 @@ To liquidate a long or short perpetual position, order requests are created by c
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+<div style="text-align: center;">
+  <a href="#top">Move to the top</a>
+</div>
 
-[Move to the top](#top)
