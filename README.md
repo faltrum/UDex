@@ -1,14 +1,14 @@
-# UDEX 
-Universal  perpetual Descentralized Exchange.
+ ![Logo](/img/udex-logo.svg)
+Universal  perpetual contracts Descentralized Exchange.
 
 ## Description
 UDEX (MVP) is XDC's own decentralized perpetual exchange. It differs from other exchanges such as [Fathum](https://fathom.fi/) and [Globiance](https://globiance.com/) as it allows you to work with futures.
 
 ## Features
 * Exclusive logo for UDEX.
-* Work with Futures.
+* Trade with Futures.
 * ETH/XDC historical graphic.
-* ETH/XDC 10x leverage.
+* ETH/XDC 15x leverage.
 
 ## Technical specifications
 * Pool designed with [ERC-4626](https://ethereum.org/es/developers/docs/standards/tokens/erc-4626/).
@@ -32,9 +32,9 @@ UDEX (MVP) is XDC's own decentralized perpetual exchange. It differs from other 
 
 * Armando Medina[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/armsves) [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/armsves/)
 
-* Kiko [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/kikkobcn) [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ec-bonometti-fullstack-blockchain-web3/)
+* Kiko Bonometti[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/kikkobcn) [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ec-bonometti-fullstack-blockchain-web3/)
 
-* Pol [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/Pol-Gallardo) [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/)
+* Pol Gallardo[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/Pol-Gallardo) [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pol-gallardo-comajuan)
 
 
 ## License
