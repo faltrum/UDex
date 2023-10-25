@@ -1,5 +1,6 @@
- ![Logo](/img/udex-logo.svg)
 <a name="top"></a>
+ ![Logo](/img/udex-logo.svg)
+
 Universal  perpetual contracts Descentralized Exchange.
 
 # Index Content
@@ -7,8 +8,21 @@ Universal  perpetual contracts Descentralized Exchange.
 * [Features](#features)
 * [Technicals specifications](#technicals-specifications)
 * [Visuals](#visuals)
-* [How does the system work?](#how-does-the-system-work?)
-
+* [How the system works](#how-the-system-works)
+	* [How users interact with it](#how-users-interact-with-it)
+* [Oracle system](#oracle-system)
+* [Fees and pricing](#fees-and-pricing)
+* [Structure](#structure)
+* [Implementation details](#implementation-details)
+* [Protocolo Perpetual Contract & Library](#protocolo-perpetual-contract-and-library)
+* [Deposits](#deposits)
+* [Withdrawals](#withdrawals)
+* [Open position](#open-position)
+* [Position decrease](#position-decrease) 
+* [Liquidating a perpetual position](#liquidating-a-perpetual-position) 
+* [Known risks and limitations](#known-risks-and-limitations) 
+* [Authors and links](#authors-and-links)
+* [License](#license)
 
 ## Description
 UDEX (MVP) is XDC's own decentralized perpetual exchange. It differs from other exchanges such as [Fathum](https://fathom.fi/) and [Globiance](https://globiance.com/) as it allows you to trade with futures and leverage.
@@ -31,7 +45,7 @@ UDEX (MVP) is XDC's own decentralized perpetual exchange. It differs from other 
 > * Video conectando la wallet.
 > * video mostrando las webs.
 
-##  How does the system work?
+## How the system works
 
 Our Perpetual Protocol supports both long and short positions. XDC is required as collateral, and we offer the option to trade with ETH.
 For example:
@@ -41,7 +55,7 @@ For example:
 Liquidity providers can deposit XDC.
 Liquidity providers bear the profits and losses of traders in the market for which they provide liquidity.
 
-### How users interact with it?
+### How users interact with it
 
 Traders can use
 
@@ -64,7 +78,7 @@ Owner can use
 
 - `setPositionFeeBasisPoints` used to adjust the position fee between 1 and 200 basis points
 
-## Oracle System
+## Oracle system
 
 Prices are provided by an on-chain oracle system:
 
@@ -72,7 +86,7 @@ Whenever a function is executed where the user sends a transaction, the asset pr
 
 The protocol obtains the updated prices instantly thanks to a library we have added with the name PRICECONVERTER, which utilizes the AggregatorV3Interface interface from Plugin(PLI).
 
-## Fees and Pricing
+## Fees and pricing
 
 We support:
 
@@ -123,7 +137,7 @@ uint256 sizeInETH;
 
 `totalAssets` is calculated by taking into consideration the XDC tokens in the vault and adding the PnL of traders as well as removing the collateral added from traders.
 
-## Protocolo Perpetual Contract & Library
+## Protocolo perpetual contract and library
 
 This section provides a technical description of the contracts.
 
@@ -150,7 +164,7 @@ Withdrawals are initiated by calling `removeLiquidity` and specifying:
 - To ensure the availability of sufficient liquidity for potential withdrawals and to prevent any adverse effects on open positions, we have implemented the "checkForAvailableLiquidity" modifier.
 - This modifier verifies that the withdrawal amount will not negatively impact ongoing operations and will not disrupt the protocol.
 
-## Open Position
+## Open position
 
 To open a position, requests must be created by calling `openPosition``, specifying:
 
@@ -162,7 +176,7 @@ To open a position, requests must be created by calling `openPosition``, specify
 - Additionally, we ensure with the `_checkPositionHealth` function that the positions to be opened are suitable for the protocol's operation.
 - To store the user's position, we've created a struct where we store all the data when opening the operation, and we add it to a mapping called `positions`.
 
-## Position Decrease
+## Position decrease
 
 Close or decrease a long/short perpetual position.
 
@@ -175,7 +189,7 @@ Market decrease order requests are created by calling `decreasePosition`, specif
 - Additionally, with the `_calculatePositionPnL` function, we calculate Profit and Loss (PnL) to ensure accurate accounting before closing a trade.Thanks to the result, we know the amount that belongs to the LPs or traders.
 - We utilize the `_checkPositionHealth` function to verify if the user's request to decrease a position is suitable for the protocol.
 
-## Liquidating a Perpetual Position
+## Liquidating a perpetual position
 
 To liquidate a long or short perpetual position, order requests are created by calling `liquidate`, specifying:
 
@@ -192,7 +206,7 @@ To liquidate a long or short perpetual position, order requests are created by c
 - One trader can only open one position at a time.
 - We thought last moment that it might be useful to have a separate `closePosition` func, so the trader can close the position without much calculations.
 
-## Authors and 🔗 Links
+## Authors and links
 
 * Jani Jesse
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/janijesse) [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/janijesse/)
