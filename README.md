@@ -2,7 +2,7 @@
 Universal  perpetual contracts Descentralized Exchange.
 
 ## Description
-UDEX (MVP) is XDC's own decentralized perpetual exchange. It differs from other exchanges such as [Fathum](https://fathom.fi/) and [Globiance](https://globiance.com/) as it allows you to work with futures.
+UDEX (MVP) is XDC's own decentralized perpetual exchange. It differs from other exchanges such as [Fathum](https://fathom.fi/) and [Globiance](https://globiance.com/) as it allows you to trade with futures and leverage.
 
 ## Features
 * Exclusive logo for UDEX.
@@ -24,7 +24,8 @@ UDEX (MVP) is XDC's own decentralized perpetual exchange. It differs from other 
 
 ## Authors and 🔗 Links
 
-* Jani Jesse[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/janijesse) [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/janijesse/)
+* Jani Jesse
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/janijesse) [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/janijesse/)
 
 * Javier López[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/JaviLM22) [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/javierlopezmartin-blockchain/)
 
