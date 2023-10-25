@@ -1,5 +1,14 @@
  ![Logo](/img/udex-logo.svg)
+<a name="top"></a>
 Universal  perpetual contracts Descentralized Exchange.
+
+# Index Content
+* [Description](#description)
+* [Features](#features)
+* [Technicals specifications](#technicals-specifications)
+* [Visuals](#visuals)
+* [How does the system work?](#how-does-the-system-work?)
+
 
 ## Description
 UDEX (MVP) is XDC's own decentralized perpetual exchange. It differs from other exchanges such as [Fathum](https://fathom.fi/) and [Globiance](https://globiance.com/) as it allows you to trade with futures and leverage.
@@ -10,7 +19,7 @@ UDEX (MVP) is XDC's own decentralized perpetual exchange. It differs from other 
 * ETH/XDC historical graphic.
 * ETH/XDC 15x leverage.
 
-## Technical specifications
+## Technicals specifications
 * Pool designed with [ERC-4626](https://ethereum.org/es/developers/docs/standards/tokens/erc-4626/).
 * Contract Vault.
 * [Oracle Plugin (PLI).](https://www.goplugin.co/)
@@ -22,7 +31,7 @@ UDEX (MVP) is XDC's own decentralized perpetual exchange. It differs from other 
 > * Video conectando la wallet.
 > * video mostrando las webs.
 
-##  How does the system work? How would a user interact with it?
+##  How does the system work?
 
 Our Perpetual Protocol supports both long and short positions. XDC is required as collateral, and we offer the option to trade with ETH.
 For example:
@@ -32,7 +41,7 @@ For example:
 Liquidity providers can deposit XDC.
 Liquidity providers bear the profits and losses of traders in the market for which they provide liquidity.
 
-## How users interact with it
+### How users interact with it?
 
 Traders can use
 
@@ -198,6 +207,7 @@ To liquidate a long or short perpetual position, order requests are created by c
 
 * Pol Gallardo[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/Pol-Gallardo) [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pol-gallardo-comajuan)
 
-
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
+[Move to the top](#top)
